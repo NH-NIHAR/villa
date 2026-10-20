@@ -1,0 +1,784 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    outline: none;
+}
+html,
+body{
+    width: 100%;
+    height: 100%;
+}
+img{
+    width: 100%;
+    height: auto;
+}
+
+#page1{
+    background-image: url("./imag/premium_photo-1764687669670-363c857191ab.avif");
+
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+}
+#hader{
+    width: 100%;
+    max-height: 10vh;
+    padding: 0% 3%;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    align-items: center;
+}
+#logo{
+    width: clamp(5rem, 10vw, 7rem);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+#nav{
+    width: auto;
+    display: flex;
+    gap: 1vw;
+    height: 80%;
+    align-items: center;
+    padding: 0.5% 0.5%;
+    border-radius: 3rem;
+    position: relative;
+    background: rgba(255, 255, 255, 0.582);
+}
+#nav .h3{
+    padding: 0.5rem 1rem;
+    border-radius: 3rem;
+    cursor: pointer;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+.activ{
+    background: #33322E;
+    color: white;
+}
+
+
+#start{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+}
+#three{
+    display: none;
+}
+#start h2{
+    width: clamp(1.4rem, 3vw, 2.5rem);
+    height: clamp(1.4rem, 3vw, 2.5rem);
+    background: rgba(253, 253, 253, 0.699);
+    color: black;
+    border-radius: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: clamp(0.6rem, 1vw, 1rem);
+    cursor: pointer;
+    font-weight: 400;
+}
+.explore-btn{
+    font-size: clamp(0.6rem, 1vw, 1rem);
+    border-radius: 2rem;
+    padding: 0.1rem 0.1rem 0.1rem 1rem;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    position: relative;
+     background:#33322E;
+     color: white;
+     cursor: pointer;
+}
+.explore-btn i{
+    width: clamp(1.4rem, 3vw, 2.5rem);
+    height: clamp(1.4rem, 3vw, 2.5rem);
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3rem;
+    color: black;
+}
+#hero{
+    display: flex;
+    gap: clamp(1rem, 2vw, 2rem);
+    padding: 2%;
+    align-items: center;
+}
+#heroleft{
+        background: rgba(255, 255, 255, 0.683);
+    padding: clamp(0.5rem, 1vw, 1rem);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 3rem;
+    gap: 0.3rem;
+    margin-top: 7vw;
+}
+#heroleft h3{
+    width: clamp(1.5rem, 3vw, 3rem);
+    height: clamp(1.5rem, 3vw, 3rem);
+    background: rgba(255, 255, 255, 0.683);
+    border-radius: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+#heroleft h3 i{
+    font-size: clamp(0.8rem, 1vw, 1rem);
+}
+#heroleft h2 i {
+    width: clamp(1.5rem, 3vw, 3rem);
+    height: clamp(1.5rem, 3vw, 3rem);
+    background: white;
+    border-radius: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    font-size: clamp(0.7rem, 2vw, 1rem);
+}
+#heroleft h2{
+    line-height: 40%;
+    text-align: center;
+}
+#heroleft h2 a{
+    font-size: clamp(0.6rem, 0.6vw, 0.6rem);
+    text-align: center;
+   
+}
+#heroleft #hello{
+    background: black;
+    a{
+        color: white;
+    }
+}
+#menu{
+    background: rgba(189, 189, 189, 0.479);
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    border-radius: 2rem;
+    margin-bottom: 1.7rem;
+    height: auto;
+}
+#menu h4 a{
+    font-size: 1rem;
+    color: rgb(0, 0, 0);
+}
+#herotop{
+    margin-top: 7vw;
+    margin-bottom: 2vw;
+}
+#herotop h4{
+    font-size: clamp(0.5rem, 1vw, 1rem);
+    overflow: hidden;
+}
+#herotop h1{
+    font-size: clamp(2rem, 4vw, 4rem);
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    overflow: hidden;
+}
+span{
+        color: #854a20;
+    }
+#herotop p{
+    width: 35vw;
+    font-size: clamp(1rem, 2vw, 1.3rem);
+    margin-bottom: clamp(0.8rem, 2vw, 2rem);
+    overflow: hidden;
+}
+#butnss button{
+    font-size: clamp(0.5rem, 1vw, 0.9rem);
+    background: #0a3b08;
+    padding: 0.7rem;
+    border-radius: 5rem;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+#butnss #vdieo{
+    background: transparent;
+    color: black;
+    border: 1px solid white;
+}
+#herorightbottom{
+    height: 14vw;
+    position: relative;
+    display: flex;
+    width: 100%;
+    align-items: flex-end;
+    gap: clamp(0.6rem, 1vw, 1rem);
+}
+#herobox1{
+    width: 30vw;
+    height: 100%;
+    background: rgb(222, 218, 218);
+    position: relative;
+    padding: 2%;
+    border-radius: clamp(1rem, 2vw, 2rem);
+}
+ 
+.swiper {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.swiper-pagination{
+    display: none;
+}
+.swiper-slide {
+    width: 100%;
+    height: 100%;
+}
+
+#btns1 {
+    position: absolute;
+    top: 90%;
+    left: 90;
+    width: clamp(1.2rem, 2vw, 2rem);
+    height: clamp(1.2rem, 2vw, 2rem);
+    background: white;
+    padding: 0.5rem;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 10;
+}
+
+#btns {
+    position: absolute;
+    top: 90%;
+    left: 80%;
+    width: clamp(1.2rem, 2vw, 2rem);
+    height: clamp(1.2rem, 2vw, 2rem);
+    background: white;
+    padding: 0.5rem;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 10;
+}
+
+#imagewrap {
+    width: 40%;
+    height: 100%;
+    box-sizing: border-box;
+    background: url("./imag/download (2).jpg") center / cover no-repeat;
+    border-radius: clamp(0.5rem, 1vw, 1rem);
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#imagewrap h4 {
+    font-size: clamp(0.3rem, 0.7vw, 0.7rem);
+}
+
+#profile {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#profile h2 {
+    width: clamp(1rem, 2vw, 2rem);
+    height: clamp(1rem, 2vw, 2rem);
+    flex-shrink: 0;
+    border-radius: 50%;
+    overflow: hidden;
+    background: rgb(184, 183, 183);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -0.5rem;
+    cursor: pointer;
+}
+
+#cont {
+    height: 100%;
+    width: 60%;
+    box-sizing: border-box;
+    h2{
+        font-size: 1.5vw;
+        
+        margin-bottom: clamp(0rem, 0.5vw, 0.5rem);
+    }
+    p{
+        font-size: 1.3vw;
+        color: rgb(84, 86, 85);
+        margin-bottom: clamp(0.1rem, 0.5vw, 0.5rem);
+
+    }
+    button{
+        background: transparent;
+        border: none;
+        a{
+            font-size: clamp(0.5rem, 0.8vw, 0.8rem);
+        }
+    }
+}
+
+#wrap2 {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    gap: 0.5rem;
+}
+#herobox2{
+    width: 34vw;
+    height: 70%;
+    background: rgba(235, 235, 234, 0.534);
+    backdrop-filter: blur(4px);
+    border-radius: clamp(1rem, 2vw, 2rem);
+    padding: 2%;
+    display: flex;
+    justify-content: space-between;
+}
+#herobox2a{
+    display: flex;
+    justify-content: flex-end;
+    align-items: start;
+    flex-direction: column;
+    text-align: start;
+    padding-right: 0.6rem;
+    gap: clamp(0rem, 0.3vw, 0.3rem);
+}
+#herobox2a h3 i{
+    font-size: clamp(0.5rem, 1.5vw, 1.4rem);
+}
+.boderl{
+    border-right: 1px solid white;
+}
+#herobox2a h2{
+    font-size: clamp(0.8rem, 1.5vw, 1.5rem);
+}
+#herobox2a p{
+    font-size: clamp(0.2rem, 1vw, 1rem);
+}
+#herobox3{
+    width: 14vw;
+    height: 100%;
+    background: #0a3b08;
+    border-radius: clamp(1rem, 2vw, 2rem);
+    padding: 1%;
+}
+#herobox3a{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5%;
+    
+}
+#herobox3a img{
+    width: 4vw;
+    height: 4vw;
+    border-radius: 3rem;
+}
+#herobox3a h3{
+    width: 3vw;
+    height: 3vw;
+    border-radius: 3rem;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    a{
+        font-weight: 300;
+        i{
+            font-size: clamp(0.5rem, 1.5vw, 1.5rem);
+        }
+    }
+}
+#herobox3 h1{
+    font-size: 1.5vw;
+    margin-bottom: 0.2rem;
+    color: white;
+}
+#herobox3 p{
+    font-size: 1vw;
+    color: rgb(249, 226, 226);
+    margin-bottom: 0.1rem;
+}
+
+
+#page2{
+    width: 100%;
+    background: rgb(255, 255, 255);
+    position: relative;
+    padding: 2%;
+}
+#page2top h1{
+    font-size: clamp(3rem, 7vw, 7rem);
+    text-align: center;
+
+    margin-top: 5vw;
+    font-family: 'Gill Sans';
+    overflow: hidden;
+}
+#pag2box1{
+    width: clamp(10rem, 30vw, 30rem);
+    height: 30vw;
+    position: relative;
+}
+.pag2box2{
+    margin-top: 15vw;
+}
+#pag2box1 img{
+    width: 100%;
+    height: 85%;
+    border-radius: 0.4rem;
+    object-fit: cover;
+    object-position: center;
+    margin-bottom: 0.5rem;
+
+}
+#p2box1des{
+    padding: 0% 2%;
+    display: flex;
+    justify-content: space-between;
+    position: relative
+}
+#p2box1des h3{
+    font-size: 1.2vw;
+    width: 40%;
+}
+#prbdelef h5{
+    font-size: 1.4vw;
+    margin-bottom: 0.4rem;
+}
+#prbdelef p{
+    font-size: 1.2vw;
+    
+}
+#page2bottom{
+    margin-bottom: 2%;
+    overflow: hidden;
+}
+#page2boxw {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    
+}
+#page3{
+    width: 100%;
+    background: white;
+    padding: 2%;
+    position: relative;
+}
+#page3top{
+    width: 100%;
+    margin-bottom: 3vw;
+    h1{
+        font-size: clamp(3rem, 7vw, 7rem);
+        margin-bottom: 0.5rem;
+        overflow: hidden;
+    }
+    p{
+        width: 50vw;
+        font-size: clamp(0.8rem, 1.5vw, 1.3rem);
+        overflow: hidden;
+    }
+}
+#page3center{
+    display: flex;
+    justify-content: center;
+    gap: clamp(0.5rem, 1vw, 1rem);
+    margin-bottom: 3vw;
+    padding: 10vw 1vw;
+    overflow: hidden;
+}
+#pg3boxs1{
+    background-image: url(./imag/indor.jpg);
+    width: clamp(15rem, 20vw, 20rem);
+    height: clamp(22rem, 30vw, 30rem);
+    background-size: cover;
+    background-position: center;
+    border-radius: 0.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    position: relative;
+    h3{
+        font-size: 2vw;
+    }
+}
+#pg3boxs3{
+    background-image: url(./imag/luxury\ home\ design.jpg);
+    width: clamp(15rem, 20vw, 20rem);
+    height: clamp(22rem, 30vw, 30rem);
+    background-size: cover;
+    background-position: center;
+    border-radius: 0.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    position: relative;
+    margin-top: 5vw;
+    h3{
+        font-size: 2vw;
+    }
+}
+#pg3boxs2{
+    background-image: url(./imag/download\ \(4\).jpg);
+    width: clamp(15rem, 20vw, 20rem);
+    height: clamp(22rem, 30vw, 30rem);
+    background-size: cover;
+    background-position: center;
+    border-radius: 0.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(30, 30, 30);
+    position: relative;
+    margin-top: 10vw;
+    h3{
+        font-size: 2vw;
+    }
+}
+
+#page3bottom{
+    width: 100%;
+    margin-bottom: 3vw;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    
+    h1{
+        font-size: clamp(3rem, 7vw, 7rem);
+        margin-bottom: 0.5rem;
+        overflow: hidden;
+    }
+    p{
+        width: 28%;
+        font-size: clamp(1.2rem, 1.5vw, 1.3rem);
+        width: 50vw;
+        font-size: clamp(0.8rem, 1.5vw, 1.3rem);
+    }
+}
+
+#page4{
+    width: 100%;
+    padding: 2%;
+    background: white;
+}
+
+#page4top h1{
+    width: 100%;
+    font-size: clamp(3rem, 7vw, 7rem);
+    margin-bottom: 1.5vw;
+    overflow: hidden;
+}
+
+#pg4bottomrleft{
+    width: 55vw;
+    display: flex;
+    justify-content: space-between;
+    gap: clamp(2rem, 4vw, 4rem);
+}
+#imgpg4 img{
+    width: 10vw;
+   height: 10vw;
+   object-fit: cover;
+}
+#pg4content p{
+    font-size: clamp(0.6rem, 1.5vw, 1.3rem);
+    line-height: 120%;
+    margin-bottom: 0.5rem;
+    overflow: hidden;
+}
+#pg4content button{
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    border: none;
+    background: black;
+
+    a{
+        font-size: clamp(0.7rem, 1.5vw, 1rem);
+        color: white;
+        
+    }
+}
+#page4bottom {
+    display: flex;
+    justify-content: space-between;
+}
+#cllas{
+    width: 30vw;
+}
+#pg4bottomright{
+    width: 30vw;
+    height: 35vw;
+    position: relative;
+    overflow: hidden;
+    img{
+        width: 100%;
+        height: 100%;
+    }
+}
+#page5{
+    width: 100%;
+    
+    background: url("https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=1175&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D");
+        background-size: cover;
+    background-repeat: no-repeat;
+}
+#page5wraper{
+    width: 100%;
+    background: linear-gradient(
+    to right,
+    #ffffff 0%,
+    #ffffff 45%,
+    #ffffff00 100%
+    );
+    display: flex;
+    padding-top: 10%;
+    padding-bottom: 2%;
+    align-items: start;
+    justify-content: space-evenly;
+
+}
+#pg5left{
+    h3{
+        font-size: clamp(1rem, 1.6vw, 1.5rem);
+        margin-bottom: 0.4rem;
+    }
+    h1{
+        font-size: clamp(2rem, 3.5vw, 4rem);
+    }
+    p{
+        font-size: clamp(0.8rem, 1.5vw, 1.3rem);
+        margin-bottom: 2rem;
+        width: 40vw;
+    }
+}
+#name{
+    margin-bottom: 0.5rem;
+    display: flex;
+    width: 70%;
+    gap: 1rem;
+    position: relative;
+    input{
+    width: clamp(10rem, 15vw, 15rem);
+    height: clamp(2rem, 3vw, 3rem);
+    padding-left: 0.5vw;
+    font-size: clamp(0.8rem, 1.2vw, 1.1rem);
+   }
+}
+#subject{
+    width: clamp(21rem, 31.3vw, 26rem);
+    height: clamp(2rem, 3vw, 3rem);
+    font-size: clamp(0.8rem, 1.2vw, 1.1rem);
+    cursor: pointer;
+    margin-bottom: 0.5rem;
+}
+
+textarea{
+    width: clamp(21rem, 31.3vw, 26rem);
+    font-size: clamp(0.8rem, 1.2vw, 1.1rem);
+    padding: 0.5vw;
+    
+}
+#submit{
+    font-size: clamp(0.8rem, 1.5vw, 1rem);
+    padding: 0.5rem  1rem;
+    background: #33322E;
+    color: white;
+    border: none;
+    border-radius: 0.1rem;
+    cursor: pointer;
+}
+#pg5right{
+    background: #33322E;
+    padding: 2vw;
+    color: white;
+}
+#location{
+    display: flex;
+    align-items: start;
+    gap: 2vw;
+    margin-bottom: 1vw;
+}
+hr {
+    margin-top: 0.5vw;
+    border: none;
+    height: 1px;
+    background: #ffffff30;
+    margin-bottom: 2vw;
+}
+#onlin{
+    display: flex;
+    gap: 1vw;
+    i{
+        color: white;
+    }
+}
+
+
+#fixd{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    background: black;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s ease;
+}
+#boxs {
+    width: clamp(5rem, 7vw, 7rem);
+    height: clamp(5rem, 7vw, 7rem);
+    border-radius: 50%;
+    border: 5px solid rgb(250, 249, 249);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h1{
+        color: white;
+    }
+}
+
+#box1 {
+    position: absolute;
+    width: clamp(5rem, 7vw, 7rem);
+    height: clamp(5rem, 7vw, 7rem);
+    border-radius: 50%;
+    border: 5px solid transparent;
+    border-top-color: rgb(76, 0, 255);
+    border-right-color: rgb(25, 0, 255);
+    animation: loader 1s linear infinite;
+    
+}
+
+@keyframes loader {
+    to {
+        transform: rotate(360deg);
+    }
+}

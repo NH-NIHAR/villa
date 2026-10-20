@@ -1,0 +1,227 @@
+@media (max-width: 884px) {
+    #nav{
+        display: none;
+    }
+    #three{
+        display: block;
+    }
+    #nav{
+        position: absolute;
+        display: block;
+        background: rgb(251, 250, 250);
+        width: 100%;
+        height: 100vh;
+        backdrop-filter: blur(2px);
+        border-radius: 0;
+        left: 0%;
+        top: 0%;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        z-index: -100;
+        margin-top: -100vh;
+        transition: 0.5s ease;
+    }
+}
+@media (max-width: 480px) {
+    #hader{
+        height: 6vh;
+        position: fixed;
+        z-index: 999;
+        /* background: rgba(255, 255, 255, 0.557);
+        backdrop-filter: blur(8px); */
+    }
+   
+   #hero{
+    flex-direction: column-reverse;
+    padding-top: 16vw;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 9%;
+    
+   }
+   #herorightbottom{
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+   }
+   #herotop{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1rem;
+   }
+   #herotop p{
+    width: auto;
+   }
+   #herobox1{
+    width: 95vw;
+   }
+   #imagewrap h4 {
+    font-size: 4vw;
+  }
+  #profile h2{
+    width: 7vw;
+    height: 7vw;
+  }
+  #herobox1{
+    width: 90vw;
+  }
+  #cont h2{
+    font-size: 5.5vw;
+    margin-bottom: 0.5rem;
+  }
+  #cont p{
+    font-size: 3.5vw;
+  }
+  #cont button{
+        a{
+            font-size: 3vw;
+        }
+    }
+    #imagewrap {
+        height: auto;
+    }
+    #herobox2{
+        width: auto;
+    }
+    #herobox2a{
+        padding: 2%;
+    }
+    #herobox2a h3 i{
+        font-size: 5vw;
+    }
+    #herobox2a h2{
+        font-size: 5vw;
+    }
+    #herobox2a p{
+        font-size: 3.5vw;
+    }
+    #herobox3{
+        width: auto;
+        padding: 2%;
+    }
+    #herobox3a img{
+        width: 10vw;
+        height: 10vw;
+    }
+    #herobox3a h3{
+        width: 8vw;
+        height: 8vw;
+        a{
+            i{
+                font-size: 4vw;
+            }
+        }
+    }
+    #herobox3 h1{
+        font-size: 4vw;
+        width: 70%;
+        margin-top: 4vw;
+    }
+    #herobox3 p{
+        font-size: 3vw;
+    }
+    #heroleft{
+        flex-direction: row;
+        align-items: center;
+    }
+    #menu{
+      flex-direction: row;
+      margin-bottom: 0;
+      margin-right: 2vw;
+    }
+    #heroleft h2 i{
+        font-size: 5vw;
+        margin-bottom: 0;
+        margin-top: 2.5vw;
+    }
+    #page2boxw{
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+    .pag2box2{
+        margin-top: 0vw;
+    }
+    #page2top{
+        margin-bottom: 7vw;
+    }
+    #page2top h1{
+    font-size: 5vw;
+    text-transform: uppercase;
+    margin-top: 5vw;
+   }
+    #pag2box1{
+        width: 90%;
+        height: 40vh;
+        margin-bottom: 7vw;
+    }
+    #p2box1des h3{
+        font-size: 3.5vw;
+        width: 40%;
+    }
+    #prbdelef h5{
+        font-size: 3vw;
+        margin-bottom: 0.4rem;
+}
+    #prbdelef p{
+        font-size: 3vw;
+    
+    }
+    #page3center{
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 9vw;
+    }
+    #pg3boxs1,
+    #pg3boxs2,
+    #pg3boxs3{
+        width: 90%;
+        h3{
+            font-size: 7vw;
+        }
+    }
+    #page3top{
+        margin-bottom: 9vw;
+    }
+    #page3top p{
+        width: 80%;
+        line-height: 130%;
+    }
+    #page3bottom p{
+        width: 80%;
+        line-height: 130%;
+    }
+    #pg4bottomrleft{
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    #pg4bottomright{
+        width: 95%;
+        height: 25rem;
+        border-radius: 0.3rem;
+        overflow: hidden;
+    }
+    #page4bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#page5wraper{
+    flex-direction: column;
+    align-items: start;
+    background: transparent;
+    padding: 2%;
+}
+#pg5left{
+    width: 90%;
+    margin-bottom: 1rem;
+    p{
+        width: 90%;
+    }
+}
+#location{
+    margin-bottom: 3vw;
+}
+}
